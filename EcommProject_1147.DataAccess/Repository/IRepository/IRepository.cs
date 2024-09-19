@@ -13,15 +13,16 @@ namespace EcommProject_1147.DataAccess.Repository.IRepository
         void Update(T entity);  
         void Remove(T entity);
         void Remove(int id);
-        void RemoveRange(IEnumerable<T> entities);  
-        T GetValue(int id);
+        void RemoveRange(IEnumerable<T> entities);
+        T Get(int id);
+
         IEnumerable<T> GetAll(
             Expression<Func<T,bool>> filter=null,
             Func<IQueryable<T>,IOrderedQueryable<T>>OrderBy=null,
             String includeProperties=null
             );
         T FirstOrDefault(
-            Expression<Func<T,bool>>Filter=null,
+            Expression<Func<T,bool>>filter=null,
             String includeProperties = null
             );
     }

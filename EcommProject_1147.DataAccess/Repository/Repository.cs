@@ -87,6 +87,7 @@ namespace EcommProject_1147.DataAccess.Repository
 
         public void Update(T entity)
         {
+            _context.ChangeTracker.Clear();
            dbSet.Update(entity);    
         }
     }

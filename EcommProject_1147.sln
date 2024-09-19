@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommProject_1147", "EcommProject_1147\EcommProject_1147.csproj", "{0E773EFE-6C7F-4C69-8C94-6B17BD7921F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommProject_1147", "EcommProject_1147\EcommProject_1147.csproj", "{0E773EFE-6C7F-4C69-8C94-6B17BD7921F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommProject_1147.Models", "EcommProject_1147.Models\EcommProject_1147.Models.csproj", "{D54C3265-20E3-4865-9233-742EC421F89E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommProject_1147.Models", "EcommProject_1147.Models\EcommProject_1147.Models.csproj", "{D54C3265-20E3-4865-9233-742EC421F89E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommProject_1147.DataAccess", "EcommProject_1147.DataAccess\EcommProject_1147.DataAccess.csproj", "{E302A9A8-58F0-466C-828D-3AB87FE758D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommProject_1147.DataAccess", "EcommProject_1147.DataAccess\EcommProject_1147.DataAccess.csproj", "{E302A9A8-58F0-466C-828D-3AB87FE758D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommProject_1147.Utility", "EcommProject_1147.Utility\EcommProject_1147.Utility.csproj", "{3DFD9D1E-7124-4ABE-A3EB-D8FA1D183949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommProject_1147.Utility", "EcommProject_1147.Utility\EcommProject_1147.Utility.csproj", "{3DFD9D1E-7124-4ABE-A3EB-D8FA1D183949}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

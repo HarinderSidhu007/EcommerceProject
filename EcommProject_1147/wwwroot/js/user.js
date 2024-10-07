@@ -4,7 +4,7 @@ $(document).ready(function () {
     loadDataTable();
 })
 
-function  () {
+function loadDataTable () {
     dataTable = $('#tblData').DataTable({
         "ajax": {
             "url":"/Admin/User/GetAll"
@@ -27,7 +27,7 @@ function  () {
                         return `
                          <div class ="text-center">
                          <a class="btn btn-danger" onclick=Lockunlock('${data.id}')>
-                        unLock
+                         <i class="fas fa-lock-open"></i>
                         </a>
                         </div>
                         `;
@@ -37,7 +37,7 @@ function  () {
                         return `
                         <div class="text-center">
                         <a class="btn btn-success" onclick=Lockunlock('${data.id}')>
-                         Lock
+                         <i class="fas fa-lock"></i>
                         </a>
                         </div>
                         `;
@@ -49,5 +49,20 @@ function  () {
     })
 }
 function Lockunlock(id) {
-    alert(id);
+    //alert(id);
+    $.ajax({
+        url: "/Admin/User/LockUnlock",
+        type: "POST",
+        data: JSON.stringify(id),
+        contentType: "application/json",
+        success: function (data) {
+            if (data.success) {
+                toastr.success(data.message);
+                dataTable.ajax.reload();
+            }
+            else {
+                toastr.error(data.message);
+            }
+        }
+    })
 }
